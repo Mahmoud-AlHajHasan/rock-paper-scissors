@@ -33,7 +33,7 @@ function playRound(playerChoice, computerChoice){
 }
 
 function getPlayerChoice(){
-  let playerChoice = prompt(`Rock, Paper or Scissors?`).toLowerCase()
+  let playerChoice = prompt(`Rock, Paper or Scissors?`).toLowerCase().trim()
   return playerChoice
 }
 
