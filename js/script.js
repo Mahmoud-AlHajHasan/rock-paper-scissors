@@ -27,7 +27,7 @@ function playRound(playerChoice, computerChoice){
     winner = `none`;
     return winner;
   } else { 
-    winner = `none`;
+    winner = `spellingMistake`;
     return winner;
   }
 }
@@ -40,23 +40,26 @@ function getPlayerChoice(){
 function game() {
   let computerPoints = 0;
   let playerPoints = 0;
-  for (i=0;i<5;i++){
+  for (i=0;(i<5)&&(playerPoints<3)&&(computerPoints<3);i++){
     let computerChoice = getComputerChoice()
     let playerChoice = getPlayerChoice()
     let winner = playRound(playerChoice,computerChoice)
     if (winner === `computer`){
       computerPoints += 1
-      alert(`YOU LOST`)
+      alert(`You lost this round!`)
     } else if (winner === `player`) {
       playerPoints += 1
-      alert(`You win this round!`)
-    } else { 
+      alert(`You won this round!`)
+    } else if (winner === `none`) { 
       alert(`Draw!`)
+      i -= 1
+    } else { 
+      alert(`Spell it right!`)
       i -= 1
     }
   }
   if (playerPoints > computerPoints) {
-    alert(`YOU WON IT ALL GZ!!!!`)
+    alert(`You won the game, Good Job!`)
   } else {
     alert(`lol loser.`)
   }
