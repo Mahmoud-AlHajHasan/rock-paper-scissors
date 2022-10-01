@@ -103,7 +103,7 @@ body {
 
 @media (max-width: 500px) {
   body {
-    width: auto;
+    width:100% ;
     gap: 1rem;
   }
   .titleFont {font-size: 1.5rem;}
