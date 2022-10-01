@@ -6,8 +6,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rock, Paper & Scissors</title>
   <script defer src="./js/script.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  
+  <header id="headerFooter" class="flexContainer titleFont">
+    Rock, Paper & Scissors!
+  </header>
+  <main id="main" class="flexContainer column paddingMain">
+    <div id="choiceHolder" class="flexContainer column border">
+      <div id="choiceText" class="mainFont flexContainer">Choose your play</div>
+      <div id="choice" class="mainFont flexContainer">
+        <button class="button-4 play mainFont">Rock</button>
+        <button class="button-4 play mainFont">Paper</button>
+        <button class="button-4 play mainFont">Scissors</button>
+      </div>
+    </div>
+    <div id="pointsRounds" class="flexContainer column">
+      <div id="textHolder" class="holder flexContainer">
+        <div id="computerPoints" class="flexContainer mainFont">Computer Points</div>
+        <div id="currentRound" class="flexContainer mainFont">Current Round</div>
+        <div id="playerPoints" class="flexContainer mainFont">Player Points</div>
+      </div>
+      <div id="numberHolder" class="holder flexContainer">
+        <div id="computerPoints" class="flexContainer mainFont border"></div>
+        <div id="currentRound" class="flexContainer mainFont border"></div>
+        <div id="playerPoints" class="flexContainer mainFont border"></div>
+    </div>
+  </div>
+    <div id="winner" class="flexContainer column border">
+      <div id="winnerText" class="flexContainer mainFont">Rounds Left to Decide</div>
+      <div id="winnerChoice" class="flexContainer winnerFont">5</div>
+    </div>
+  </main>
+  <footer id="headerFooter" class="flexContainer footerPadding">The Odin Project 2022</footer>
 </body>
 </html>
