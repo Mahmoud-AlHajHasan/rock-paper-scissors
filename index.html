@@ -16,28 +16,30 @@
     <div id="choiceHolder" class="flexContainer column border">
       <div id="choiceText" class="mainFont flexContainer">Choose your play</div>
       <div id="choice" class="mainFont flexContainer">
-        <button class="button-4 play mainFont">Rock</button>
-        <button class="button-4 play mainFont">Paper</button>
-        <button class="button-4 play mainFont">Scissors</button>
+        <button id="rock" class="button-4 play mainFont">Rock</button>
+        <button id="paper" class="button-4 play mainFont">Paper</button>
+        <button id="scissors" class="button-4 play mainFont">Scissors</button>
       </div>
     </div>
     <div id="pointsRounds" class="flexContainer column">
       <div id="textHolder" class="holder flexContainer">
-        <div id="computerPoints" class="flexContainer mainFont">Computer Points</div>
-        <div id="currentRound" class="flexContainer mainFont">Current Round</div>
-        <div id="playerPoints" class="flexContainer mainFont">Player Points</div>
+        <div id="computerPointsText" class="flexContainer mainFont">Computer Points</div>
+        <div id="currentRoundText" class="flexContainer mainFont">Rounds Played</div>
+        <div id="playerPointsText" class="flexContainer mainFont">Player Points</div>
       </div>
       <div id="numberHolder" class="holder flexContainer">
-        <div id="computerPoints" class="flexContainer mainFont border"></div>
-        <div id="currentRound" class="flexContainer mainFont border"></div>
-        <div id="playerPoints" class="flexContainer mainFont border"></div>
+        <div id="computerPoints" class="flexContainer mainFont border">0</div>
+        <div id="currentRound" class="flexContainer mainFont border">0</div>
+        <div id="playerPoints" class="flexContainer mainFont border">0</div>
     </div>
   </div>
     <div id="winner" class="flexContainer column border">
-      <div id="winnerText" class="flexContainer mainFont">Rounds Left to Decide</div>
-      <div id="winnerChoice" class="flexContainer winnerFont">5</div>
+      <div id="winnerText" class="flexContainer mainFont">This Round's Winner</div>
+      <div id="winnerChoice" class="flexContainer winnerFont">...</div>
     </div>
   </main>
   <footer id="headerFooter" class="flexContainer footerPadding">The Odin Project 2022</footer>
+  <audio id="win" src="./audio/mixkit-retro-game-notification-212.wav"></audio>
+  <audio id="loss" src="./audio/mixkit-arcade-retro-game-over-213.wav"></audio>
 </body>
 </html>
